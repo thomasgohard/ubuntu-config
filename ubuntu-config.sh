@@ -14,4 +14,6 @@ for cmd in "${INPUTRC_COMMANDS[@]}"; do
 	fi
 done
 
+gsettings set org.gnome.settings-daemon.peripherals.touchpad natural-scroll true
+
 exit 0
