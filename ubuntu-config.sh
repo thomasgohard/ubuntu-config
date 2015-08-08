@@ -15,5 +15,6 @@ for cmd in "${INPUTRC_COMMANDS[@]}"; do
 done
 
 gsettings set org.gnome.settings-daemon.peripherals.touchpad natural-scroll true
+gsettings set com.canonical.Unity.Lenses remote-content-search none
 
 exit 0
