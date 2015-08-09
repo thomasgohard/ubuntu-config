@@ -20,7 +20,7 @@ gsettings set org.gnome.settings-daemon.peripherals.touchpad natural-scroll true
 gsettings set com.canonical.Unity.Lenses remote-content-search none
 
 sudo apt-get update -y
-sudo apt-get install vim -y
+sudo apt-get install vim git -y
 
 if [ ! -f "$VIMRC" ]; then
 	touch "$VIMRC"
