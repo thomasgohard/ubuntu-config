@@ -18,7 +18,7 @@ if ! grep -Fxq "$VIRTUALBOX_DEB" /etc/apt/sources.list; then
 fi
 
 sudo apt-get update -y
-sudo apt-get install vim git virtualbox-5.0 dkms vagrant -y
+sudo apt-get install vim git virtualbox-5.0 dkms vagrant inkscape -y
 
 VIRTUALBOX_EXTPACK=${VIRTUALBOX_EXTPACK//\{version\}/$(VBoxManage -v | cut -dr -f 1)}
 VIRTUALBOX_EXTPACK=${VIRTUALBOX_EXTPACK//\{release\}/$(VBoxManage -v | cut -dr -f 2)}
